@@ -1,5 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
+    color: white;
     font-size: 16px;
     background-color: hsl(0, 100%, 74%);
     background-image: url("../images/bg-intro-desktop.png");
@@ -14,7 +15,6 @@ body{
 .text{
     width: 490px;
     display: block;
-    color: white;
 }
 
 .large-text{
@@ -22,4 +22,28 @@ body{
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 30px;
+}
+
+.trial-signup{
+    display: block;
+    margin-left: 75px;
+}
+
+.trial-header{
+    background-color: hsl(248, 32%, 49%);
+    width: 540px;
+    height: 60px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px 1px rgba(0,0,0,0.17);
+}
+
+.form-container{
+    width: 540px;
+    height: 475px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 9px 0px 0px rgba(0,0,0,0.15);
 }
