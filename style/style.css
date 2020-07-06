@@ -146,6 +146,15 @@ span{
     display: none;
 }
 
+.input-section.error .error-icon,
+.input-section.error #error-text{
+    display:block;
+}
+
+.input-section.error input{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
 @media only screen and (min-width: 1000px){
     .wrapper{
         flex-direction: row;

@@ -1,20 +1,15 @@
-function validate(){
-    const firstName = document.getElementById("first-name")
-    const lastName = document.getElementById("last-name")
-    const email = document.getElementById("email")
-    const password = document.getElementById("password")
+const form = document.querySelector('form')
+const inputs = document.querySelectorAll('input');
 
-//     if (firstName.value == ""){
-//         let firstNameError = document.getElementsByClassName("first-name-error")
-//         firstName[0].id = "visible"
-//     }
-//     if (lastName.value == ""){
-        
-//     }
-//     if (email.value == ""){
-        
-//     }
-//     if (password.value == ""){
-        
-//     }
-// }
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    inputs.forEach(input => {
+       if(!input.value){
+           input.parentElement.classList.add('error')
+       }
+       else{
+           input.parentElement.classList.remove('error')
+       }
+    })
+})
+
