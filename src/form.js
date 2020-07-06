@@ -4,17 +4,17 @@ function validate(){
     const email = document.getElementById("email")
     const password = document.getElementById("password")
 
-    if (firstName.value == ""){
-        let firstNameError = document.getElementsByClassName("first-name-error")
-        firstName[0].id = "visible"
-    }
-    if (lastName.value == ""){
+//     if (firstName.value == ""){
+//         let firstNameError = document.getElementsByClassName("first-name-error")
+//         firstName[0].id = "visible"
+//     }
+//     if (lastName.value == ""){
         
-    }
-    if (email.value == ""){
+//     }
+//     if (email.value == ""){
         
-    }
-    if (password.value == ""){
+//     }
+//     if (password.value == ""){
         
-    }
-}
+//     }
+// }

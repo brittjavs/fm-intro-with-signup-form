@@ -31,26 +31,35 @@
       </div>
       <div class="form-container">
         <form class="trial-form" action="#">
-          <input type="text" name="first-name" placeholder="First Name" id="first-name" value="">
-          <img src="./images/icon-error.svg" alt="error-icon" class="error">
-          <div class="first-name-error" id="hidden">
-            First Name cannot be empty
+          <div class="input-section">
+            <input type="text" name="first-name" placeholder="First Name" id="first-name">
+            <img src="./images/icon-error.svg" alt="error-icon" class="error-icon">
+            <p class="first-name-error" id="error-text">
+              First Name cannot be empty
+            </p>
           </div>
-          <input type="text" name="last-name" placeholder="Last Name" id="last-name" value="">
-          <img src="./images/icon-error.svg" alt="error-icon" class="error">
-          <div class="last-name-error" id="hidden">
-            Last Name cannot be empty
+          <div class="input-section">
+            <input type="text" name="last-name" placeholder="Last Name" id="last-name">
+            <img src="./images/icon-error.svg" alt="error-icon" class="error-icon">
+            <p class="last-name-error" id="error-text">
+              Last Name cannot be empty
+            </p>
           </div>
-          <input type="email" name="email" placeholder="Email Address" id="email" value="">
-          <img src="./images/icon-error.svg" alt="error-icon" class="error">
-          <div class="email-error" id="hidden">
-            Looks like this is not an email
+          <div class="input-section">
+            <input type="email" name="email" placeholder="Email Address" id="email" >
+            <img src="./images/icon-error.svg" alt="error-icon" class="error-icon">
+            <p class="email-error" id="error-text">
+              Looks like this is not an email
+            </p>
           </div>
-          <input type="password" name="password" placeholder="Password" id="password">
-          <img src="./images/icon-error.svg" alt="error-icon" class="error">
-          <div class="password-error" id="hidden">
-            Password cannot be empty
+          <div class="input-section">
+            <input type="password" name="password" placeholder="Password" id="password">
+            <img src="./images/icon-error.svg" alt="error-icon" class="error-icon">
+            <p class="password-error" id="error-text">
+              Password cannot be empty
+            </p>
           </div>
+          
           <button onClick=formValidation() type="submit">CLAIM YOUR FREE TRIAL</button>
         </form>
         <div class="form-footer">
@@ -64,7 +73,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Brittany Javalera</a>.
     </p>
   </footer>
   <script src="src/form.js"></script>
