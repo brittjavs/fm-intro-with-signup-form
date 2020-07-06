@@ -176,4 +176,9 @@ span{
     .form-container{
         padding: 40px;
     }
+
+    .form-footer{
+        font-size: 12px;
+    }
+    
 }
