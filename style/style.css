@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -7,69 +13,115 @@ body{
 }
 
 .wrapper{
+    min-height: 100vh;
+    width: 90%;
     display: flex;
-    width: 75%;
-
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-.text{
-    width: 490px;
-    display: block;
+.intro{
+    text-align: center;
+    flex: 1;
+    margin-bottom: 50px;
+    padding: 0 30px;
+    
 }
 
 .large-text{
-    font-size: 35pt;
+    font-size: 19pt;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 30px;
 }
 
+.paragraph-text{
+    font-size: 14px;
+}
+
 .trial-signup{
-    display: block;
-    margin-left: 75px;
+    flex: 1;
 }
 
 .trial-header{
     background-color: hsl(248, 32%, 49%);
-    width: 540px;
-    height: 60px;
-    margin-bottom: 25px;
+    padding: 15px 90px;
+    margin-bottom: 30px;
     font-size: 14px;
     font-weight: 400;
     border-radius: 10px;
     box-shadow: 0px 7px 0px 1px rgba(0,0,0,0.17);
+    text-align: center;
 }
 
 .form-container{
-    width: 540px;
-    height: 475px;
     background-color: white;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 9px 0px 0px rgba(0,0,0,0.15);
 }
 
 .trial-form{
-    width: 85%;
+    position: relative;
+    margin-bottom: 25px;
 }
 
-input{
-    margin-bottom: 20px;
+.trial-form input{
+    margin-bottom: 5px;
     width: 100%;
     height: 55px;
     border-radius: 7px;
     border-style: solid;
-    border-color: hsl(0, 0%, 95%);
-    
+    border-color: hsl(0, 0%, 90%);
+    padding-left: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    outline: none;
 }
 
-button{
+.trial-form input:focus{
+    border: 1.5px solid hsl(250, 29%, 17%);
+}
+
+.trial-form input:hover{
+    border-color: hsl(0, 0%, 60%);;
+}
+
+
+#id, .error{
+    display: none;    
+}
+
+.trial-form button{
     background-color: hsl(154, 59%, 51%);
-    border:none;
+    color: white;
+    border: none;
     width: 100%;
     height: 55px;
     border-radius: 7px;
+    padding-left: 20px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    box-shadow: 0px 4px 0px 0px rgba(32, 152, 96, 0.7);
+}
+
+.trial-form button:hover{
+    background-color: hsl(154, 58%, 26%);
+    outline: none;
 }
 
 .form-footer{
+    margin-top: 10px;
     color: hsl(246, 25%, 77%);
+    font-size: 14px;
+    text-align: center;
+}
+
+span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
 }
